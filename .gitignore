@@ -1,0 +1,7 @@
+# Intellij IDEA files
+.idea
+
+# Locally used browser drivers
+driver
+# Project exclude paths
+/target/
