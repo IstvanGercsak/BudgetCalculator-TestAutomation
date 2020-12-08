@@ -1,4 +1,4 @@
-package LandingPage;
+package BudgetCalculator.Pages.Landing;
 
 public class LandingPageTest extends LandingPagePOM {
 }
