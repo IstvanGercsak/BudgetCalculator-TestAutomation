@@ -4,10 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class signUpPagePOM {
-    String githubHref = "https://github.com/IstvanGercsak";
-    String LinkedInHref = "https://www.linkedin.com/in/istvangercsak/";
-
+public class SignUpPagePOM {
+    public String signUpPageUrl = "https://budgetcalculator-thirdproject.herokuapp.com/sign_up";
     String userNameID = "username";
     String passwordID = "password";
     String passwordAgainID = "password-again";

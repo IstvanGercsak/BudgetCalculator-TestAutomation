@@ -1,14 +1,12 @@
 package Cucumber.PageObjectModel;
 
-import Cucumber.DriverFactory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LandingPagePOM  extends DriverFactory {
-    String githubHref = "https://github.com/IstvanGercsak";
-    String LinkedInHref = "https://www.linkedin.com/in/istvangercsak/";
+public class LandingPagePOM{
 
+    public String landingPageUrl = "https://budgetcalculator-thirdproject.herokuapp.com/";
     String userNameID = "username";
     String passwordID = "password";
     String loginButtonCSS = "body > div.container-fluid > div > div > div > form > button";

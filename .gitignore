@@ -8,3 +8,6 @@ driver
 
 # Log files
 logs
+
+# Test output report files
+test-output
