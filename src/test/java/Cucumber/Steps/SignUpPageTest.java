@@ -1,6 +1,7 @@
 package Cucumber.Steps;
 
 import Cucumber.PageObjectModel.SignUpPagePOM;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
@@ -38,5 +39,14 @@ public class SignUpPageTest extends SignUpPagePOM {
     public void iArriveOnTheLandingPage() {
         logger.info("Checking the landing page url");
         Assert.assertEquals(driver.getCurrentUrl(), landingPage.landingPageUrl);
+    }
+
+    @Given("^The social link on the sign up page for ([^\"]*) has the correct href as ([^\"]*)$")
+    public void theSocialLinkOnTheSignUpPageForSocial_iconHasTheCorrectHrefAsSocial_href(String socialIcon, String socialHref) {
+        if (socialIcon.equals("Github")) {
+            Assert.assertEquals(githubIconCSS(driver).getAttribute("href"), socialHref);
+        } else {
+            Assert.assertEquals(linkedInIconCSS(driver).getAttribute("href"), socialHref);
+        }
     }
 }
